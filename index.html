@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>innerchild</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,7 +13,9 @@
 
     <!-- SIDEBAR -->
     <aside class="sidebar">
-        <h1 class="logo">innerchild</h1>
+        <a href="index.html">
+            <img src="images/innerchild_logo.png" alt="innerchild logo" class="logo">
+        </a>
 
         <nav class="menu">
             <a href="#">Главная</a>
@@ -25,8 +28,18 @@
         </nav>
 
         <div class="now-playing sidebar-panel">
-            <p>сейчас играет:</p>
-            <p>трек 1</p>
+            <p class="section-title">Сейчас играет</p>
+            <div class="track-card">
+                <img src="images/demosong-logo.jpg" alt="track cover" class="track-cover">
+                <div class="track-info">
+                    <p class="track-title">innerchild</p>
+                    <p class="track-subtitle">Cherry blossom</p>
+                </div>
+            </div>
+            <audio controls>
+                <source src="demosong.mp3" type="audio/mpeg">
+                Ваш браузер не поддерживает элемент audio.
+            </audio>
         </div>
 
         <div class="socials sidebar-panel">
@@ -38,7 +51,7 @@
 
         <div class="status sidebar-panel">
             <p>Статус:</p>
-            <span>готовимся к релизу ✧</span>
+            <span>готовимся к новому релизу ✧</span>
         </div>
 
         <div class="company">
@@ -52,13 +65,17 @@
         <!-- HERO -->
         <section class="hero">
             <div class="hero-text">
-                <h2>innerchild</h2>
+                <a href="index.html">
+                    <img src="images/innerchild_logo.png" alt="innerchild logo" class="logo-hero">
+                </a>
                 <p>
                     Мы приносим мечты в реальность  
-                    и говорим с тобой на языке музыки
+                    <br>и говорим с тобой на языке музыки
                 </p>
-                <button href="#">О нас</button>
-                <button>слушать</button>
+                <div class="hero-buttons">
+                    <button class="button">О нас</button>
+                    <button class="button">слушать</button>
+                </div>
             </div>
 
         </section>
@@ -67,7 +84,7 @@
         <section class="updates">
             
             <div class="panel" id="news">
-                <h3>новости</h3>
+                <h3>Новости</h3>
 
                 <div class="card">
                     <p class="date">10.03</p>
@@ -88,7 +105,7 @@
 
             <div class="panel" id="upcoming-events">
                 <div class="events">
-                    <h3>события</h3>
+                    <h3>События</h3>
 
                     <div class="card">
                         <p>20.03 — релиз трека</p>
@@ -115,10 +132,11 @@
 
             <!-- PHOTO -->
             <div class="panel" id="gallery">
-                <h3>latest photo</h3>
+                <h3>Последние фото</h3>
 
                 <div class="photo-box">
-                    <P> фото с последней фотосессии ✧</p>
+                    <img src="images/photo1.jpg" alt="photo1">
+                    <p> фото с последней фотосессии ✧</p>
                 </div>
             </div>
 
