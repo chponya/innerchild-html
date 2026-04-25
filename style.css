@@ -1,7 +1,16 @@
+:root {
+    --primary-bg-color: #FEFEFEff;
+    --secondary-bg-color: #F6F9FDff;
+    --border-color: #C5C5DBff;
+    --text-color: #7F72B5ff;
+    --secondary-text-color: #AAA9CEff;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: white;
+    background: var(--primary-bg-color);
+    color: var(--text-color);
 }
 
 /* layout */
@@ -13,11 +22,20 @@ body {
 
 /* sidebar */
 .sidebar {
-    background: white;
+    background: var(--primary-bg-color);
     padding: 20px;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--primary-bg-color);
+    box-shadow: 0px 0px 8px var(--border-color);
 }
 
+.sidebar-panel{
+    background: var(--secondary-bg-color);
+    height: fit-content;
+    padding: 5px 20px;
+    margin: 20px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+}
 .logo {
     margin-bottom: 20px;
 }
@@ -30,7 +48,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #555;
+    color: var(--secondary-text-color);
 }
 
 /* main */
@@ -62,19 +80,20 @@ body {
     
 }
 .panel {
-    background: #eef2ff;
+    background: var(--secondary-bg-color);
     height: 450px;
     padding: 10px 20px;
-    border: #ddd solid 1px;
+    /* border: 1px solid var(--border-color); */
+    box-shadow: 0px 0px 8px var(--border-color);
     border-radius: 15px;
     width: 28%;
 }
 
 /* cards */
 .card {
-    background: white;
+    background: var(--primary-bg-color);
     padding: 10px;
-    border: #ddd solid 1px;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -84,11 +103,17 @@ body {
 } */
 
 #upcoming-events {
-    background: white;
+    background: var(--primary-bg-color);
 }
 
 #upcoming-events .card {
-    background: eef2ff;
+    background: var(--secondary-bg-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#timer .card{
+    margin-top: 20px;
 }
 
 
